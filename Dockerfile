@@ -2,6 +2,7 @@ FROM node:18-bullseye-slim as base
 
 WORKDIR /app
 
+COPY .npmrc ./
 COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
 RUN \
     if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
