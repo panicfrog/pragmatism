@@ -2,19 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 自定义字体定义 */
+/* 配置 Inter 字体的普通字体和斜体 */
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/Inter/static/Inter_18pt-Regular.ttf') format('truetype');
-  font-weight: 400;
+  src: url('/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/Inter/static/Inter_18pt-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
+  src: url('/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 :root {
